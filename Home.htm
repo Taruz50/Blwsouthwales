@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="game.css"></link>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="contents.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="game-container">
+    <div class="grid"></div>
+    <div class="No-of-flags">Flags left: <span id='flags-left'></span></div>
+    <div id= "result"></div>
+  </div>
+  <button class="go-top-btn">
+    <img src="Images/UpArrow.png" alt="arrow up"></button>
+
+    <script>
+    const goTopBtn = document.querySelector('.go-top-btn');
+
+  window.addEventListener('scroll', checkHeight)
+
+    function checkHeight(){
+      if(window.scrollY > 100){
+        goTopBtn.style.display = "flex"
+      } else {
+        goTopBtn.style.display = "none"
+      }
+    }
+
+    goTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    })
+  </script>
+
+  <footer>
+	<!--	<h1 class="bottomtext">BLW SOUTHWALES🔴 </h1>-->
+		<div class="footer-container">
+			<div class="bottom">
+				<div class="footer-heading heading1">
+					<h2>About Us</h2>
+					<a href="#">LoveWorld</a>
+					<a href="#">BLW</a>
+				</div>
+				<div class="footer-heading heading2">
+					<h2>References</h2>
+					<a href="Home.htm">Home</a>
+					<a href="Forms.htm">Forms</a>
+					<a href="MyImages.htm">Images</a>
+					<a href="MyVideos.htm">Videos</a>
+					<a href="About.htm">About</a>
+				</div>
+				<div class="footer-heading heading3">
+					<h2>Community</h2>
+					<a href="#">Facebook</a>
+					<a href="https://www.instagram.com/blw.southwales/">Instagram</a>
+          <a href="https://www.youtube.com/c/BLWUKZONEA">YouTube</a>
+				</div>
+				<div class="footer-heading heading4">
+					<h2>Contact Us</h2>
+					<a href="#">Mobile</a>
+					<a href="#">Email</a>
+					<a href="https://www.instagram.com/blw.southwales/">Instagram</a>
+				</div>
+			</div>
+			<div class="copyright">
+				<hr>
+				<small><b><u>Copyright &#169; 2022 BLWSouthWales by Taruz All Rights Reserved.</u></b></small>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
