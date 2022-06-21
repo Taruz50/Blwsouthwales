@@ -4,9 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Forms</title>
+  <title>New Member</title>
+  <link rel="stylesheet" href="forms.css" />
+  <script src="contents.js" defer></script>
 </head>
 <body>
+  <header>
+    <div id="brand">
+      <div class="Imoji">
+        <img src="Images/12.png" alt="" height="38px">
+      </div>
+    </div>
+		<nav class="menu-bar">
+			<ul>
+				<li class="layer"><a href="Home.php">Home</a></li>
+				<li class="layer"><a href="Forms.htm">Forms</a>
+        <div class="sub-menu">
+          <ul>
+            <li class="layer"><a href="#">New Member</a></li>
+            <li class="layer"><a href="#">Partnership/Sponsorship</a></li>
+            <li class="layer"><a href="#">Pledge</a></li>
+          </ul>
+        </div>
+      </li>
+				<li class="layer"><a href="MyImages.php">Images</a></li>
+				<li class="layer"><a href="MyVideos.php">Videos</a></li>
+				<li class="layer"><a href="About.php">About</a></li>
+			</ul>
+		</nav>
+		<div class="hamburger-menu">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+			<ul class="mobile-menu">
+				<li class="layer"><a href="MyImages.php">Main</a></li>
+				<li class="layer"><a href="MyVideos.php">Partnership</a></li>
+				<li class="layer"><a href="About.php">Pledge</a></li>
+			</ul>
+		</div>
+	</header>
+	<script src="contents.js"></script>
+	<!--<div class="fluid">
+		<div>
+			<h1>BLW SOUTHWALES🔴 </h1>
+			<p class="text">WELCOMES YOU!!!</p>
+			<div class="responsive">
+				<img class="fluid" src="Images/last.jpg" alt="">-->
+				<!--<img class="fluid" src="Family.JPG" alt="">-->
+			</div>
+		</div>
+	</div>
+  <section class="contact" id="contact">
+    <div class="max-width">
+    <div class="column right">
+  <form action="process.php" method="post">
 
+    <div class="fields">
+      <div class="field name">
+        <input type="text"name="name" placeholder="Name" required>
+        <span id="form-text"></span>
+      </div>
+      <div class="field name">
+        <input type="text" name="surname" placeholder="Surname" required>
+        <span id="form-text"></span>
+      </div>
+
+    </div>
+    <div class="field" id="form">
+      <!--<div class="field name">
+        <input type="text" name="Last&nbsp;Name" placeholder="Phone number" required>
+        <span id="form-text"></span>
+      </div>-->
+      <div class="field email">
+        <input type="text" name="email" placeholder="Enter Email address" id="email" required onkeydown="validation()">
+        <span id="form-text"></span>
+      </div>
+
+      <div class="field invite">
+        <input type="text" name="invite" placeholder="Who Invited You?" id="invite" required onkeydown="validation()">
+        <span id="form-text"></span>
+      </div>
+      <div class="field email">
+        <input type="text" name="contacts" placeholder="How can we reach you?" id="contacts" required onkeydown="validation()">
+        <span id="form-text"></span>
+      </div>
+
+ <div class="field textarea">
+      <textarea cols="30" name="comments" rows="10" placeholder="Don't be shy, tell us something..."></textarea>
+    </div>
+
+    <div class="button">
+      <button type="submit">Submit</button>
+    </div>
+</div>
+</div>
+</div>
+</form>
+</section>
 </body>
 </html>
