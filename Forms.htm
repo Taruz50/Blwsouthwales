@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>New Member</title>
   <link rel="stylesheet" href="forms.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="contents.js" defer></script>
 </head>
+
 <body>
   <header>
     <div id="brand">
@@ -15,91 +18,305 @@
         <img src="Images/12.png" alt="" height="38px">
       </div>
     </div>
-		<nav class="menu-bar">
-			<ul>
-				<li class="layer"><a href="Home.htm">Home</a></li>
-				<li class="layer"><a href="Forms.htm">Forms</a>
-        <div class="sub-menu">
-          <ul>
-            <li class="layer"><a href="#">New Member</a></li>
-            <li class="layer"><a href="#">Partnership/Sponsorship</a></li>
-            <li class="layer"><a href="#">Pledge</a></li>
-          </ul>
-        </div>
-      </li>
-				<li class="layer"><a href="MyImages.htm">Images</a></li>
-				<li class="layer"><a href="MyVideos.htm">Videos</a></li>
-				<li class="layer"><a href="About.htm">About</a></li>
-			</ul>
-		</nav>
-		<div class="hamburger-menu">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-			<ul class="mobile-menu">
-				<li class="layer"><a href="MyImages.htm">Main</a></li>
-				<li class="layer"><a href="MyVideos.htm">Partnership</a></li>
-				<li class="layer"><a href="About.htm">Pledge</a></li>
-			</ul>
-		</div>
-	</header>
-	<script src="contents.js"></script>
+    <nav class="menu-bar">
+      <ul>
+        <li class="layer"><a href="Home.htm">Home</a></li>
+        <li class="layer"><a href="Forms.htm">Forms</a>
+          <div class="sub-menu">
+            <ul>
+              <li class="layer"><a href="#">New Member</a></li>
+              <li class="layer"><a href="#">Partnership/Sponsorship</a></li>
+              <li class="layer"><a href="#">Pledge</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="layer"><a href="MyImages.htm">Images</a></li>
+        <li class="layer"><a href="MyVideos.htm">Videos</a></li>
+        <li class="layer"><a href="About.htm">About</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li class="layer"><a href="MyImages.htm">Main</a></li>
+        <li class="layer"><a href="MyVideos.htm">Partnership</a></li>
+        <li class="layer"><a href="About.htm">Pledge</a></li>
+      </ul>
+    </div>
+  </header>
+  <script src="contents.js"></script>
   <div class="fluid">
     <div>
       <h1>BLW SOUTHWALES🔴 </h1>
       <p class="text">WELCOME NEW MEMBER</p>
     </div>
   </div>
+  <br> <br>
+  <hr>
+  <h2 class="pre-text">DISCLAIMER!</h2>
+  <p class="pre-text">BELIEVER’S LOVEWORLD SOUTHWALES CAMPUS MINISTRY SPECIALLY THANKS YOU FOR SIGNING UP INTO OUR FELLOWSHIP.<br>
+    THIS INFORMATION IS GOING TO BE PROTECTED AND ONLY USED FOR CONTACT PURPOSES AND ALSO CELEBRATE YOU ON YOUR BIRTHDAY,<br>
+    ALONG WITH OTHER THINGS WITHIN PERMITTED DISCRETIONS. WE GUARANTEE THE SAFETY OF YOUR INFORMATION UNDER THE DATA PROTECTION ACT.</p>
+    <hr>
   <section class="contact" id="contact">
     <div class="max-width">
-    <div class="column right">
-  <form action="process.php" method="post">
+      <div class="column right">
+        <form action="process.php" method="post">
 
-    <div class="fields">
-      <div class="field name">
-        <input type="text"name="name" placeholder="Name" required>
-        <span id="form-text"></span>
-      </div>
-      <div class="field name">
-        <input type="text" name="surname" placeholder="Surname" required>
-        <span id="form-text"></span>
-      </div>
+          <div class="fields">
 
+            <div class="field name">
+              <input type="text" name="name" placeholder="Name(s)" required>
+              <span id="form-text"></span>
+            </div>
+            <div class="field name">
+              <input type="text" name="name" placeholder="Middle">
+              <span id="form-text"></span>
+            </div>
+            <div class="field name">
+              <input type="text" name="surname" placeholder="Surname" required>
+              <span id="form-text"></span>
+            </div>
+
+          </div>
+          <div class="field" id="form">
+
+            <div class="field email">
+              <input type="text" name="student" placeholder="Email address" id="email" required onkeydown="validation()"><br>
+            </div>
+            <hr>
+            <p class="text">I am a:</p>
+            <div class="form-text">Brother</div><input type="radio" name="gender" value="" checked />
+            <div class="form-text">Sister</div><input type="radio" name="gender" value="" />
+            <br><br>
+            <div class="field invite">
+              <input type="text" name="invite" placeholder="Who invited or told you about us?" id="invite" required><br>
+            </div>
+            <hr>
+            <p></p>
+            <p class="text">Would you like us to pay you a visit?<small><sup>*</sup></small></p>
+            <br>
+            <div class="form-text">Yes, I don't mind</div><input type="radio" name="visit" value="" />
+            <br><br>
+            <div class="form-text">No thanks</div><input type="radio" name="visit" value="" />
+            <br><br>
+            <div class="field email">
+              <input type="number" name="student" placeholder="StudentID" id="student" required><br>
+            </div>
+            <div class="field email">
+              <input type="text" name="course" placeholder="What course are you studying?" id="course" required><br>
+              <p class="side-note"><small><b>NB: If you finished school, please write finished.</b></small></p>
+
+            </div>
+            <hr>
+            <p></p>
+            <p class="text">What Year of your Course are you currently in?<small><sup>*</sup></small></p>
+            <br>
+            <div class="form-text">Foundation Year</div><input type="radio" name="college" value="" checked />
+            <br><br>
+            <div class="form-text">1st Year</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">2nd Year</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">3rd Year</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">Master's Degree</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">PhD/Doctorate Degree</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">Finished</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">None</div><input type="radio" name="college" value="" />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="college" value="" />
+            <div class="field name">
+              <input type="text" name="name" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <span id="form-text" class="text">When is your birthday?</span>
+            <div class="field name">
+              <input type="date" name="date" required>
+              <span id="form-text"></span>
+            </div>
+            <label for="phone" class="text">UK phone number: {+44}</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="07000 500 900" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}" required><br>
+            <small class="text">Format: 07000-500-900</small><br><br>
+            <label for="phone" class="text">WhatsApp number: {+44}</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="07000 500 900" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}"><br>
+            <small class="text">Format: 07000-500-900</small><br><br>
+
+            <div class="field email">
+              <input type="text" name="contacts" placeholder="How can we reach you?" id="contacts" required>
+              <span id="form-text"></span>
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" name="home" rows="10" placeholder="Current Home Address" required></textarea>
+            </div>
+            <hr>
+            <p></p>
+            <p class="text"><u>Do you have any particular Skill sets?</u></p>
+            <br><br>
+            <div class="form-text">Can Sing</div><input type="checkbox" name="sing" value="" />
+            <br><br>
+            <div class="form-text">Graphic designer</div><input type="checkbox" name="design" value="" />
+            <br><br>
+            <div class="form-text">Web Designer</div><input type="checkbox" name="web" value="" />
+            <br><br>
+            <div class="form-text">Media Production(Social Media/Photography)</div><input type="checkbox" name="media" value="" />
+            <br><br>
+            <div class="form-text">Technical support</div><input type="checkbox" name="tech" value="" />
+            <br><br>
+            <div class="form-text">Can play a Musical Instrument</div><input type="checkbox" name="music" value="" />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="department" value="" />
+            <div class="field skills">
+              <input type="text" name="skills" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <hr>
+            <p></p>
+            <p class="text">Are you interested in joining a Department?</p>
+            <p></p>
+            <br>
+            <div class="form-text">Choir (Singers)</div><input type="radio" name="department" value="" />
+            <br><br>
+            <div class="form-text">Follow-up Team</div><input type="radio" name="department" value="" />
+            <br><br>
+            <div class="form-text">Ushering</div><input type="radio" name="department" value="" />
+            <br><br>
+            <div class="form-text">Technical Support</div><input type="radio" name="department" value="" checked />
+            <br><br>
+            <div class="form-text">Decorations Team</div><input type="radio" name="department" value="" />
+            <br><br>
+            <div class="form-text">Media Department</div><input type="radio" name="department" value="" />
+            <br><br>
+            <div class="form-text">Dance and Drama</div><input type="radio" name="department" value="" />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="department" value="" />
+            <div class="field name">
+              <input type="text" name="name" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <br><br>
+            <hr>
+            <p></p>
+            <p class="text">Are you Born Again?<small><sup>*</sup></small> </p>
+            <p class="side-note"><small><b>If No, then choose Other if you want us to lead you in prayer</b></small></p>
+            <br>
+            <div class="form-text">Yes</div><input type="radio" name="Born-Again" value="" />
+            <br><br>
+            <div class="form-text">No</div><input type="radio" name="Born-Again" value="" checked />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="Born-Again" value="" />
+            <div class="field name">
+              <input type="text" name="name" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <br><br>
+            <hr>
+            <p></p>
+            <p class="text">Are you Baptised?<small><sup>*</sup></small></p>
+            <p class="side-note"><small><b>If No, then choose Other if you like us to add you into Baptismal Classes</b></small></p>
+            <br>
+            <div class="form-text">Yes</div><input type="radio" name="Baptise" value="" checked />
+            <br><br>
+            <div class="form-text">No</div><input type="radio" name="Baptise" value="" />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="Baptise" value="" />
+            <div class="field name">
+              <input type="text" name="name" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <br><br>
+            <hr>
+            <p></p>
+            <p class="text">Have you received the Holy Spirit?<small><sup>*</sup></small></p>
+            <p class="side-note"><small><b>If No, then choose Other if you like us to pray with you to Receive the Holy Spirit</b></small></p>
+            <br>
+            <div class="form-text">Yes</div><input type="radio" name="Spirit" value="" checked />
+            <br><br>
+            <div class="form-text">No</div><input type="radio" name="Spirit" value="" />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="Spirit" value="" />
+            <div class="field name">
+              <input type="text" name="name" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <hr>
+            <p></p>
+            <p class="text">Did you attend Foundation School?<small><sup>*</sup></small></p>
+            <p class="side-note"><small><b>If No, then choose Other if you like us to enrol you into Foundation School</b></small></p>
+            <br>
+            <div class="form-text">Yes</div><input type="radio" name="Spirit" value="" />
+            <br><br>
+            <div class="form-text">No</div><input type="radio" name="Spirit" value="" checked />
+            <br><br>
+            <div class="form-text">Other:</div><input type="radio" name="Spirit" value="" />
+            <div class="field name">
+              <input type="text" name="name" placeholder="Specify other...">
+              <span id="form-text"></span>
+            </div>
+            <hr>
+            <p></p>
+            <p class="text">What are the best hours of the day to call you?<small><sup>*</sup></small></p>
+            <br>
+            <div class="form-text">MORNING</div><input type="radio" name="Spirit" value="" />
+            <br><br>
+            <div class="form-text">AFTERNOON</div><input type="radio" name="Spirit" value="" checked />
+            <br><br>
+            <div class="form-text">EVENING</div><input type="radio" name="Spirit" value="" />
+            <br><br>
+            <div class="form-text">ANYTIME IS COOL WITH ME</div><input type="radio" name="Spirit" value="" />
+            <br><br>
+            <p></p>
+            <br>
+            <div class="field textarea">
+              <textarea cols="30" name="comments" rows="10" placeholder="Don't be shy, tell us something interesting about yourself..."></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+      </div>
     </div>
-    <div class="field" id="form">
-      <!--<div class="field name">
-        <input type="text" name="Last&nbsp;Name" placeholder="Phone number" required>
-        <span id="form-text"></span>
-      </div>-->
-      <div class="field email">
-        <input type="text" name="email" placeholder="Enter Email address" id="email" required onkeydown="validation()">
-        <span id="form-text"></span>
-      </div>
+    </form>
+    <script type="text/javascript">
+      function validation() {
+        var form = document.getElementById("form")
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("form-text");
+        var pattern =
+          Regex = /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
 
-      <div class="field invite">
-        <input type="text" name="invite" placeholder="Who Invited You?" id="invite" required onkeydown="validation()">
-        <span id="form-text"></span>
-      </div>
-      <div class="field email">
-        <input type="text" name="contacts" placeholder="How can we reach you?" id="contacts" required onkeydown="validation()">
-        <span id="form-text"></span>
-      </div>
+        if (email.match(pattern)) {
+          form.classList.add("valid");
+          form.classList.remove("invalid");
+          text.innerHTML = 'Your e-mail is valid.';
+          text.style.color = "#00ff00";
 
- <div class="field textarea">
-      <textarea cols="30" name="comments" rows="10" placeholder="Don't be shy, tell us something..."></textarea>
-    </div>
+        } else {
+          form.classList.remove("valid");
+          form.classList.add("invalid");
+          text.innerHTML = "E-mail Invalid.";
+          text.style.color = "#ff0000";
+        }
+        if (email == "") {
+          form.classList.remove("valid");
+          form.classList.remove("invalid");
+          text.innerHTML = "";
+          text.style.color = "#00ff00";
 
-    <div class="button">
-      <button type="submit">Submit</button>
-    </div>
-</div>
-</div>
-</div>
-</form>
-</section>
-<div class="form-copyright">
+        }
+      }
+    </script>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <div class="form-copyright">
     <hr>
     <small><b><u>Copyright &#169; 2022 BLWSouthWales by Taruz All Rights Reserved.</u></b></small>
-</div>
+  </div>
 </body>
+
 </html>
