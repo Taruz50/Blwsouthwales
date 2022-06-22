@@ -764,7 +764,7 @@ footer span a:hover {
 }
 
 .form-copyright {
-  margin-top: 470rem;
+  margin-top: 490rem;
   text-align: center;
   font-size: 14px;
   color: white;
@@ -961,7 +961,7 @@ h1 {
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(150vh);
+  height: calc(200vh);
   background-color: rgba(0, 3, 0, 0.87);
   width: 100%;
 }
