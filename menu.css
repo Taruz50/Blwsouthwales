@@ -109,28 +109,13 @@ header {
 }
 /*================================= ROTATING LOGO ==============================*/
 .Imoji {
-  border-radius: 20px;
+  border-radius: 100px;
   width: 45px;
   height: 45px;
   position: absolute;
-  top: 0;
+  top: 4px;
   content: "";
   margin-left:
-  -webkit-animation: spin 9s linear infinite;
-  -moz-animation: spin 9s linear infinite;
-  animation: spin 9s linear infinite;
-}
-
-@-webkit-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
-}
-
-@-moz-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
-}
-
-@-webkit-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
 }
 
 /*============================================================================*/
@@ -145,7 +130,7 @@ ul {
 }
 
 .layer {
-  border: 2px solid red;
+  border: 2px solid purple;
   font-size: 21px;
   font-weight: bold;
   font-style: italic;
@@ -222,19 +207,19 @@ h1 {
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 512px);
+  height: calc(150vh);
   background-color: rgba(0, 3, 0, 0.87);
   width: 100%;
 }
 
 .mobile-menu li:hover {
   margin-bottom: 7px;
-  background-color: red;
+  background-color: #5f0b9d;
   border: 4px solid black;
 }
 
 nav li:hover{
-  background-color: red;
+  background-color: #5f0b9d;
   border: 4px solid black;
 text color: black;
 }

@@ -1,94 +1,48 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>BLW SOUTHWALES</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="menu.css" />
-	<script src="contents.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Member</title>
+  <link rel="stylesheet" href="Start-page.css" />
+  <script src="contents.js" defer></script>
 </head>
 
 <body>
+  <header>
+   <div id="brand">
+     <div class="Imoji">
+       <img src="Images/Logo.png" alt="" height="100px">
+     </div>
+   </div>
+ </header>
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <div class="column right">
+        <p class="text-response">WELCOME...</p>
+        <br>
+        <div class="field" id="form">
+          <div class="button">
+          <a href="Main.htm"><button id="redirect">LET'S BEGIN!!!</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.querySelector('#redirect')
+      .addEventListener('click', () => {
+        window.location.href = 'https://taruz50.github.io/Blwsouthwales/Main.htm';
+      });
+  </script>
 
 
-	<header>
-		<div id="brand">
-			<div class="Imoji">
-				<img src="Images/12.png" alt="" height="38px">
-			</div>
-		</div>
-		<nav>
-			<ul>
-				<li class="layer"><a href="Home.htm">Home</a></li>
-				<li class="layer"><a href="Forms.htm">Forms</a></li>
-				<li class="layer"><a href="MyImages.htm">Images</a></li>
-				<li class="layer"><a href="MyVideos.htm">Videos</a></li>
-				<li class="layer"><a href="About.htm">About</a></li>
-			</ul>
-		</nav>
-		<div class="hamburger-menu">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-			<ul class="mobile-menu">
-				<li class="layer"><a href="Home.htm">Home</a></li>
-				<li class="layer"><a href="Forms.htm">Forms</a></li>
-				<li class="layer"><a href="MyImages.htm">Images</a></li>
-				<li class="layer"><a href="MyVideos.htm">Videos</a></li>
-				<li class="layer"><a href="About.htm">About</a></li>
-			</ul>
-		</div>
-	</header>
-	<script src="contents.js"></script>
-	<div class="fluid">
-		<div>
-			<h1>BLW SOUTHWALES🔴 </h1>
-			<p class="text">WELCOMES YOU!!!</p>
-			<div class="responsive">
-				<img class="fluid" src="Images/last.jpg" alt="">
-				<!--<img class="fluid" src="Family.JPG" alt="">-->
-			</div>
-		</div>
-	</div>
-	<footer>
-		<h1 class="bottomtext">BLW SOUTHWALES🔴 </h1>
-		<div class="footer-container">
-			<div class="bottom">
-				<div class="footer-heading heading1">
-					<h2>About Us</h2>
-					<a href="About.htm/#blw">BLW</a>
-					<a href="About.htm/#LW">LoveWorld</a>
-				</div>
-				<div class="footer-heading heading2">
-					<h2>References</h2>
-					<a href="Home.htm">Home</a>
-					<a href="Forms.htm">Forms</a>
-					<a href="MyImages.htm">Images</a>
-					<a href="MyVideos.htm">Videos</a>
-					<a href="About.htm">About</a>
-				</div>
-				<div class="footer-heading heading3">
-					<h2>Community</h2>
-					<a href="#">Facebook</a>
-					<a href="https://www.instagram.com/blw.southwales/">Instagram</a>
-					<a href="https://www.youtube.com/c/BLWUKZONEA">YouTube</a>
-					<a href="#">KingsChat</a>
-				</div>
-				<div class="footer-heading heading4">
-					<h2>Contact Us</h2>
-					<a href="#">Mobile</a>
-					<a href="#">Email</a>
-					<a href="https://www.instagram.com/blw.southwales/">Instagram</a>
-				</div>
-			</div>
-			<div class="copyright">
-				<hr>
-				<small><b><u>Copyright &#169; 2022 BLWSouthWales by Taruz All Rights Reserved.</u></b></small>
-			</div>
-		</div>
-	</footer>
+  <div class="form-copyright">
+    <hr>
+    <small><b><u>Copyright &#169; 2022 BLWSouthWales by Taruz All Rights Reserved.</u></b></small>
+  </div>
 </body>
-
 
 </html>
