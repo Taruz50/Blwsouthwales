@@ -8,7 +8,7 @@ body {
   /*background-color: rgba(0, 3, 0, 0.9);*/
   background: #0c192c;
   /*#353836;*/
-  color: white;
+  color: aqua;
   font-family: monospace;
 }
 
@@ -242,7 +242,206 @@ text color: black;
   /*background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7));*/
 }
 
+@media only screen and (max-width: 375px){
+  .video{
+    position: fixed;
+    overflow: hidden;
+    top: 40%;
+    left: 50%;
+    min-width: 190%;
+    min-height: 100%;
+    width: 150vh;
+    height: 55vh;
+    background-size: cover;
+  }
+  
+    h2{
+      font-size: 30px;
+    }
+
+    header nav {
+      display: none;
+    }
+
+    .bottom {
+      height: 500vh;
+    }
+
+    .footer-heading a {
+      margin-bottom: 0.004rem;
+      font-size: 12px;
+    }
+
+    .bottomtext {
+      font-size: 36px;
+    }
+
+    /*                                  BLW ROTATING LOGO               */
+
+    .Imoji {
+      left: 45%;
+    }
+    /*------------------------------------------------------------------*/
+
+
+    .hamburger-menu {
+      display: block;
+      position: static;
+    }
+
+    .hamburger-menu div {
+      transition: 2.3s;
+    }
+
+    ul a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .layer {
+      font-size: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px){
+  .video{
+    position: fixed;
+    overflow: hidden;
+    top: 40%;
+    left: 50%;
+    min-width: 190%;
+    min-height: 100%;
+    width: 150vh;
+    height: 55vh;
+    background-size: cover;
+  }
+
+    h2{
+      font-size: 30px;
+    }
+
+    header nav {
+      display: none;
+    }
+
+    .bottom {
+      height: 500vh;
+    }
+
+    .footer-heading a {
+      margin-bottom: 0.004rem;
+      font-size: 12px;
+    }
+
+    .bottomtext {
+      font-size: 36px;
+    }
+
+    /*                                  BLW ROTATING LOGO               */
+
+    .Imoji {
+      left: 45%;
+    }
+    /*------------------------------------------------------------------*/
+
+
+    .hamburger-menu {
+      display: block;
+      position: static;
+    }
+
+    .hamburger-menu div {
+      transition: 2.3s;
+    }
+
+    ul a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .layer {
+      font-size: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 428px){
+  .video{
+    position: fixed;
+    overflow: hidden;
+    top: 40%;
+    left: 50%;
+    min-width: 190%;
+    min-height: 100%;
+    width: 150vh;
+    height: 55vh;
+    background-size: cover;
+}
+    header nav {
+      display: none;
+    }
+
+    h2{
+      font-size: 30px;
+    }
+
+    .bottom {
+      height: 500vh;
+    }
+
+    .footer-heading a {
+      margin-bottom: 0.004rem;
+      font-size: 12px;
+    }
+
+    .bottomtext {
+      font-size: 36px;
+    }
+
+    /*                                  BLW ROTATING LOGO               */
+
+    .Imoji {
+      left: 45%;
+    }
+    /*------------------------------------------------------------------*/
+
+
+    .hamburger-menu {
+      display: block;
+      position: static;
+    }
+
+    .hamburger-menu div {
+      transition: 2.3s;
+    }
+
+    ul a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .layer {
+      font-size: 30px;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
+  .video{
+    position: fixed;
+    overflow: hidden;
+    top: 30%;
+    left: 50%;
+    min-width: 30%;
+    min-height: 100%;
+    width: 112vh;
+    height: 80vh;
+    background-size: cover;
+  }
+
   header nav {
     display: none;
   }
