@@ -13,6 +13,19 @@ body {
   font-family: monospace;
 }
 
+.video{
+  position: fixed;
+  overflow: hidden;
+  top: 80%;
+  left: 50%;
+  min-width: 190%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -10;
+}
 
 .copyright {
   text-align: center;
