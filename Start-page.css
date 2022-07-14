@@ -830,7 +830,7 @@ header {
   position: absolute;
   top: 2px;
   content: "";
-  left: 46%;
+  left: 43.5%;
 }
 
 /*============================================================================*/
@@ -986,7 +986,7 @@ nav li:hover {
 
   /*                                  BLW ROTATING LOGO               */
   .Imoji {
-    left: 40%;
+    left: 31%;
   }
 
   /*------------------------------------------------------------------*/
@@ -1146,6 +1146,18 @@ h2 span {
 @media (max-width:768px) {
   .container .popup-image img {
     width: 95%;
+  }
+}
+
+@media (max-width: 815px){
+  .Imoji {
+    left: 39%;
+  }
+}
+
+@media (max-width: 500px){
+  .Imoji {
+    left: 31%;
   }
 }
 

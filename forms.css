@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0), rgba(219, 8, 8, 0.9), rgba(219, 8, 8, 0.9), rgba(0, 0, 0, 1.0));
+  background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0));
   height: 280vh;
 }
 
@@ -832,28 +832,8 @@ header {
   top: 0;
   content: "";
   margin-left:
-    -webkit-animation: spin 9s linear infinite;
-  -moz-animation: spin 9s linear infinite;
-  animation: spin 9s linear infinite;
 }
 
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
 
 /*============================================================================*/
 ul {}
