@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>New Member</title>
   <link rel="stylesheet" href="forms.css" />
-  <link rel="stylesheet" href="Intl.css">
+  <link rel="stylesheet" href="Start-page.css" />
   <script src="contents.js" defer></script>
 </head>
 
@@ -15,38 +15,10 @@
   <header>
     <div id="brand">
       <div class="Imoji">
-        <img src="Images/Logo.png" alt="" height="40px">
+        <a href="Main.htm"><img src="Images/Logo.png" alt="" height="200px"></a>
       </div>
     </div>
-    <nav class="menu-bar">
-      <ul>
-        <li class="layer"><a href="Home.htm">Home</a></li>
-        <li class="layer"><a href="Forms.htm">Forms</a>
-          <div class="sub-menu">
-            <ul>
-              <li class="layer"><a href="#">New Member</a></li>
-              <li class="layer"><a href="#">Partnership/Sponsorship</a></li>
-              <li class="layer"><a href="#">Pledge</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="layer"><a href="MyImages.htm">Images</a></li>
-        <li class="layer"><a href="MyVideos.htm">Videos</a></li>
-        <li class="layer"><a href="About.htm">About</a></li>
-      </ul>
-    </nav>
-    <div class="hamburger-menu">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-      <ul class="mobile-menu">
-        <li class="layer"><a href="MyImages.htm">Main</a></li>
-        <li class="layer"><a href="MyVideos.htm">Partnership</a></li>
-        <li class="layer"><a href="About.htm">Pledge</a></li>
-      </ul>
-    </div>
   </header>
-  <script src="contents.js"></script>
   <section class="contact" id="contact">
     <div class="max-width">
       <div class="column right">
@@ -54,7 +26,11 @@
         <br>
         <div class="field" id="form">
           <div class="button">
-            <button id="redirect">LET'S GET OUT OF HERE!!!</button>
+            <button id="redirect"><b>LET'S GET OUT OF HERE!!!</b></button>
+          </div>
+          <br>
+          <div class="button">
+            <a href="Form-choice.htm"><button id="redirect"><b>BACK TO FORMS</b></button></a>
           </div>
         </div>
       </div>
@@ -63,7 +39,7 @@
   <script>
     document.querySelector('#redirect')
       .addEventListener('click', () => {
-        window.location.href = 'https://taruz50.github.io/Blwsouthwales/Index.htm';
+        window.location.href = 'https://taruz50.github.io/Blwsouthwales/Main.htm';
       });
   </script>
 
